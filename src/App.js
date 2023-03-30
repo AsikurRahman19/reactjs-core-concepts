@@ -6,7 +6,7 @@ const singer ={name:'Dr. Mahfuz'}
 function App() {
   return (
     <div className="App">
-      <Person></Person>
+      <Person name="asikur" nikename="kamal"></Person>
       <Person></Person>
       <Person></Person>
       <Person></Person>
@@ -15,9 +15,9 @@ function App() {
     </div>
   );
 }
-function Person() {
+function Person(props) {
   return (<div className='Person'>
-     <h1>Md.Asikur Rahman</h1>
+     <h1>{props.name}</h1>
      <p>Compuer Science Engineer</p>
 
 
